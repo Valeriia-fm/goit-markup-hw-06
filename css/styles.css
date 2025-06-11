@@ -27,7 +27,8 @@ h4 {
 }
 
 .container {
-  width: 1158px;
+  max-width: 320px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -235,12 +236,14 @@ img {
 
 .benefits-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+  gap: 72px;
 }
 
-.benefits-list-item {
+/* .benefits-list-item {
   flex-basis: calc((100% - 72px) / 4);
-}
+} */
 
 .advantages {
   padding: 120px 0;
