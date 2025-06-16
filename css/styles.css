@@ -161,15 +161,31 @@ img {
   padding: 72px 52px;
   max-width: 1200px;
   margin: 0 auto;
+  /* background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/bgim.jpg); */
+
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/bgim.jpg);
+    url(../images/back-telph.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1440px;
+}
+
+@media screen and (min-resolution: 2x) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mob2x.jpg);
+  }
 }
 
 .hero-title {
@@ -896,12 +912,27 @@ img {
 
   .hero {
     padding: 112px 136px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/back-tabl.jpg);
   }
 
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
     max-width: 496px;
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tab2x.jpg);
+    }
   }
 }
 
@@ -948,5 +979,23 @@ img {
 
   .team-item {
     width: calc((100% - 72px) / 4);
+  }
+
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bgim.jpg);
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/desc2x.jpg);
+    }
   }
 }
