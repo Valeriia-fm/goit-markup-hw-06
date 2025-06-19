@@ -626,21 +626,23 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+  text-align: left;
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: column;
   /* align-items: baseline; */
   /* justify-content: flex-start; */
   /* max-width: 1158px; */
   margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-ft {
-  display: flex;
-  flex-direction: column;
-  margin-right: 120px;
+  /* margin-right: 120px; */
+  padding-bottom: 72px;
 }
 
 .icon-list-ft {
@@ -664,6 +666,7 @@ img {
 .foot-icons {
   display: flex;
   flex-direction: column;
+  padding-bottom: 72px;
 }
 
 .soc-item-foot {
@@ -678,7 +681,7 @@ img {
 }
 
 .subscr {
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 .footer-input {
@@ -693,7 +696,9 @@ img {
   line-height: 2;
   letter-spacing: 0.04em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: transparent;
+  opacity: 0.3;
 }
 
 .footer-input:focus {
@@ -750,6 +755,8 @@ img {
 .footer-form {
   display: flex;
   gap: 24px;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*--------FOOTER------*/
@@ -787,8 +794,11 @@ img {
 .modal {
   border-radius: 4px;
 
-  width: 408px;
-  min-height: 584px;
+  /* width: 408px;
+  min-height: 584px; */
+
+  width: 288px;
+  height: 623px;
 
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -921,7 +931,10 @@ img {
 .modal-textarea {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  width: 360px;
+  /* width: 360px;
+  height: 120px; */
+
+  width: 256px;
   height: 120px;
   background-color: transparent;
   resize: none;
@@ -1069,6 +1082,32 @@ img {
     display: none;
   }
 
+  .footer-container {
+    text-align: left;
+  }
+
+  .foot-top {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .footer-form {
+    flex-direction: row;
+  }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
+
+  .modal-textarea {
+    width: 360px;
+    height: 120px;
+  }
+
   @media screen and (min-resolution: 2x) {
     .hero {
       background-image: linear-gradient(
@@ -1152,6 +1191,39 @@ img {
     display: flex;
     gap: 40px;
     flex-direction: row;
+  }
+
+  .footer-input {
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  .subscr {
+    margin-left: auto;
+  }
+  .footer-container {
+    align-items: baseline;
+    justify-content: flex-start;
+    max-width: 1158px;
+    flex-direction: row;
+  }
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .container-ft {
+    margin-right: 120px;
+    padding: 0;
+  }
+
+  .subscr {
+    margin-left: auto;
+  }
+
+  .foot-icons {
+    padding: 0;
   }
 
   @media screen and (min-resolution: 2x) {
