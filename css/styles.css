@@ -622,7 +622,7 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   display: inline-block;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .footer-logo-color {
@@ -1024,7 +1024,6 @@ img {
 
   .benefits-list-item {
     flex-basis: calc((100% - 24px) / 2);
-    margin-bottom: 72px;
   }
   .benefits-subtitle {
     text-align: left;
@@ -1040,7 +1039,7 @@ img {
   }
 
   .hero {
-    padding: 112px 136px;
+    padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1240,6 +1239,7 @@ img {
   .container-ft {
     margin-right: 120px;
     padding: 0;
+    margin-bottom: 0;
   }
 
   .subscr {
@@ -1248,6 +1248,7 @@ img {
 
   .foot-icons {
     padding: 0;
+    margin-bottom: 0;
   }
 
   @media screen and (min-resolution: 2x) {
